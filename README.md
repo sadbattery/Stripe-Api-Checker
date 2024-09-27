@@ -23,3 +23,25 @@ Before running the script, make sure you have the following prerequisites instal
    
    ```bash
    node -v
+   ```
+# Stripe Account
+
+You need a Stripe account to generate the publishable and secret keys.  
+Go to the Stripe dashboard and create an account if you don't have one.  
+Navigate to **Developers > API keys** in the Stripe dashboard to get your secret and publishable keys.  
+Your secret key will start with `sk_` and your publishable key will start with `pk_`. Use the test keys for development purposes.
+
+## Requirements
+
+- Node.js (Installed as shown above)
+- Stripe Secret and Publishable keys from your Stripe account
+
+## Install the Stripe Package
+```bash
+npm install stripe
+```
+## Run The Code
+```bash
+node stripe-api-checker.js
+```
+
